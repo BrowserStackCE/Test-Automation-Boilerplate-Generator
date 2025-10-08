@@ -1,98 +1,144 @@
-# Test Automation Boilerplate Generator
+Markdown
 
-**An interactive CLI to instantly generate a starter test automation project.**
+# 🚀 Expert Test Automation Framework Recommender 🚀
 
-![Language](https://img.shields.io/badge/language-Node.js-green?style=for-the-badge&logo=nodedotjs)
-![License](https://img.shields.io/badge/license-MIT-purple?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-Active-brightgreen?style=for-the-badge)
+An intelligent, interactive CLI tool that helps developers and QA engineers choose the perfect test automation framework for their project.
 
-</div>
-
-This command-line tool streamlines the setup process for new test automation projects. It asks a series of questions about your technical stack and testing needs, then generates a minimal, ready-to-use boilerplate project packaged in a `.zip` file.
+This isn't just a simple survey; it's an expert system that asks about your technical needs, team workflow, and scalability goals to provide a tailored recommendation from a curated list of high-quality boilerplate repositories.
 
 ---
 
-## Table of Contents
+### ✨ Live Demo
 
--   [Core Features](#-core-features)
--   [How It Works](#️-how-it-works)
--   [Supported Frameworks](#-supported-frameworks)
--   [Getting Started](#-getting-started)
--   [Future Roadmap & Contributing](#-future-roadmap--contributing)
--   [License](#-license)
+Here's a simulation of the recommender in action, guiding a user to the perfect web automation framework:
 
-## ✨ Core Features
+```sh
+$ npx expert-automation-recommender
 
-* **🤖 Interactive Setup:** A simple and intuitive command-line wizard guides you through the configuration.
-* **🚀 Instant Boilerplate Generation:** Go from zero to a functional project structure in seconds.
-* **📦 Packaged for Convenience:** The generated project is delivered as a clean `.zip` archive, ready to be shared or unzipped anywhere.
-* **✍️ Pre-configured Starters:** Includes minimal, working test examples for **Playwright** and **Selenium** to get you started immediately.
+🚀 Welcome to the Expert Test Automation Framework Recommender!
+As of: Thursday, 9 October 2025
 
-## ⚙️ How It Works
+--- Step 1: Core Requirements ---
+? First, what is your primary testing target? › Desktop or Mobile Web
+? And which programming language will you be using? › JavaScript
+✔ Okay, a JavaScript solution for Web testing. Let's dive deeper.
 
-The tool performs a few simple steps:
+--- Step 2: Web Testing Style & Workflow ---
+? What style of testing best fits your team's needs? › Modern All-in-One
+? Besides E2E tests, do you also need to test individual UI components? › Yes
+? How important is an interactive visual debugger with time-travel? › It's a top priority.
+✔ Understood. A e2e_modern approach for web.
 
-1.  **Asks Questions:** It prompts you for key information, such as your preferred programming language and the platform you intend to test (Web, Mobile, API, etc.).
-2.  **Recommends a Framework:** Based on your answers, it selects a suitable framework.
-3.  **Generates Files:** It creates a new directory containing a basic `README.md` and a sample test file for the recommended framework.
-4.  **Zips the Archive:** Finally, it packages the entire directory into a `.zip` file and places it in your current working directory.
+Analyzing your requirements to find the perfect match...
+✅ Analysis Complete!
 
-## ✅ Supported Frameworks
+┌───────────────────────────────────────────────────────────────────┐
+│  ✅ Recommendation Complete!                                          │
+├───────────────────────────────────────────────────────────────────┘
+│ Based on your answers, we recommend: Playwright
+│
+│ 💡 Why it's a great fit for you:
+│    * It delivers the top-tier visual debugging experience that is a priority for your team.
+│    * It includes support for the component testing you require, in addition to end-to-end tests.
+│    * A modern framework from Microsoft, known for its speed, reliability, and excellent cross-browser/platform capabilities.
+│
+│ 🤔 Potential Limitations to Consider:
+│    * Its auto-waiting mechanism can sometimes be less intuitive than Cypress's for complex, dynamic applications. The community plugin ecosystem is still growing compared to older frameworks.
+│
+│ 🚀 To get started, clone the repository:
+│    git clone [https://github.com/BrowserStackCE/browserstack-examples-playwright](https://github.com/BrowserStackCE/browserstack-examples-playwright)
+└───────────────────────────────────────────────────────────────────
+🌟 Key Features
+Interactive Wizard: A step-by-step conversational interface that guides you to the right solution.
 
-This tool currently provides boilerplate code for the following combinations:
+Covers All Targets: Provides expert recommendations for Desktop Web, Mobile Web, and Native Mobile App (iOS & Android) testing.
 
-| Platform | Language                  | Framework Recommended | Boilerplate Status |
-| :------- | :------------------------ | :-------------------- | :----------------- |
-| **Web** | `JavaScript` / `TypeScript` | `Playwright`          | ✅ Generated       |
-| **Web** | `Java` / `Python`           | `Selenium`            | ✅ Generated       |
-| **Mobile** | Any                       | `Appium`              | ⚠️ Basic README only |
-| **API** | Any                       | Varies                | ⚠️ Basic README only |
+Deeply Nuanced Logic: Goes beyond language choice, asking about:
 
-> **Note:** For combinations marked with ⚠️, the tool will still generate a named folder and a README, but it does not yet include sample test code. Contributions are welcome!
+Native vs. Cross-Platform mobile strategies.
 
-## 🚀 Getting Started
+BDD vs. Traditional coding styles.
 
-To run this tool on your local machine, follow these steps:
+Scenario-level vs. File-level parallel execution needs.
 
-**1. Prerequisites:**
-* You must have [Node.js](https://nodejs.org/) (v16.x or newer) and npm installed.
+Component testing requirements.
 
-**2. Clone the Repository:**
-```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
-3. Install Dependencies:
+The importance of visual debugging tools.
+
+Curated Boilerplates: All recommendations link to high-quality, ready-to-use boilerplate repositories from BrowserStack's examples.
+
+Personalized Analysis: The final recommendation includes a dynamic summary of why the framework is a good fit for you and a balanced look at its potential limitations.
+
+Polished UI: A clean, colorful, and intuitive command-line experience.
+
+✅ Prerequisites
+Node.js (v16.x or higher recommended)
+
+npm or npx
+
+🛠️ Installation & Usage
+There are three ways to use the recommender:
+
+1. Quick Run (Recommended)
+You can run the tool directly without a permanent installation using npx. This ensures you're always using the latest version.
 
 Bash
 
+npx expert-automation-recommender
+(Note: The package name expert-automation-recommender is a placeholder for when this tool is published to npm.)
+
+2. Global Installation
+If you want to install the tool globally on your machine:
+
+Bash
+
+npm install -g expert-automation-recommender
+Then, you can run it with the command:
+
+Bash
+
+expert-automation-recommender
+3. Running from Source
+To run the tool from a local clone:
+
+Bash
+
+# 1. Clone the repository
+git clone <repository_url>
+
+# 2. Navigate into the directory
+cd expert-automation-recommender
+
+# 3. Install dependencies
 npm install
-4. Run the Tool:
 
-Bash
-
+# 4. Run the tool
 node index.js
-Follow the on-screen prompts, and the final .zip file will appear in your project directory.
+🧠 The Recommendation Engine
+The tool currently recommends from a curated list of frameworks covering a wide range of needs.
 
-🛣️ Future Roadmap & Contributing
-This project is actively being developed. We welcome contributions from the community! Here are some areas we'd love help with:
+Web Frameworks
+JavaScript: Playwright, Cypress, WebdriverIO (with and without Cucumber)
 
-[ ] Expanding Boilerplate Support:
+Java: TestNG, JUnit 5, Cucumber (with TestNG or JUnit 5)
 
-Add a sample test for Appium (Mobile).
+Mobile App Frameworks
+Native iOS: XCUITest (Swift)
 
-Add templates for API testing (REST Assured for Java, pytest for Python).
+Native Android: Espresso (Kotlin/Java)
 
-[ ] Improving Recommendation Logic:
+Cross-Platform (Appium):
 
-Utilize all the questions (Browsers, Parallel, CI/CD) to provide more intelligent recommendations and configurations.
+JavaScript: WebdriverIO (with and without Cucumber)
 
-Handle all language/platform combinations gracefully.
+Java: TestNG, JUnit 5, Cucumber with TestNG
 
-[ ] Adding Features:
+🤝 Contributing
+Contributions are welcome! If you'd like to help improve the tool, please feel free to:
 
-Add an option to generate the project in a plain directory instead of a zip file.
+Report a bug by opening an issue.
 
-Integrate basic dependency management files (pom.xml, package.json, requirements.txt).
+Suggest a new framework or boilerplate to add.
 
-Please feel free to fork the repository, make changes, and submit a Pull Request.
+Submit a pull request with improvements to the logic or user interface.
 
